@@ -10,8 +10,6 @@ The URL shortener is a powerful tool that enables users to effortlessly shorten 
 - View and manage the list of shortened URLs.
 - Copy shortened links with one click.
 - Responsive and user-friendly interface built with ReactJS.
-- (Optional) User authentication for personalized link management.
-- (Optional) Basic analytics for tracking link clicks.
 
 ---
 
