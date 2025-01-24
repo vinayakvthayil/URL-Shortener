@@ -1,0 +1,145 @@
+.result-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.url-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.original-url, .short-url {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.label {
+    font-weight: 600;
+    color: #666;
+    font-size: 14px;
+}
+
+.url-text, .short-url-link {
+    color: #2196f3;
+    text-decoration: none;
+    word-break: break-all;
+    font-size: 14px;
+}
+
+.url-text:hover, .short-url-link:hover {
+    text-decoration: underline;
+}
+
+.url-edit-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit-container, .display-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.url-edit-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.url-edit-input:focus {
+    border-color: #2196f3;
+    outline: none;
+}
+
+.edit-buttons, .action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.edit-button, .copy-button, .cancel-button, .delete-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.edit-button {
+    background-color: #2196f3;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #1976d2;
+}
+
+.edit-button.save {
+    background-color: #4caf50;
+}
+
+.edit-button.save:hover {
+    background-color: #388e3c;
+}
+
+.copy-button {
+    background-color: #9e9e9e;
+    color: white;
+}
+
+.copy-button:hover {
+    background-color: #757575;
+}
+
+.copy-button.copied {
+    background-color: #4caf50;
+}
+
+.cancel-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #d32f2f;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+.error-message {
+    color: #f44336;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.url-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 12px;
+    color: #666;
+}
+
+.clicks, .created-at {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

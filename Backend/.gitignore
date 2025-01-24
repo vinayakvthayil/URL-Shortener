@@ -1,0 +1,14 @@
+/.env
+**/.env
+# Ignore .env file containing API keys
+.env
+
+# Ignore configuration files containing secrets
+config.js
+secrets.json
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files
+*.log

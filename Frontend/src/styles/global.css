@@ -1,0 +1,127 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper {
+    max-width: 800px;
+    width: 100%;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+    backdrop-filter: blur(8px);
+}
+
+/* Form Styles */
+.url-form {
+    display: flex;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.url-input {
+    flex: 1;
+    padding: 15px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.url-input:focus {
+    outline: none;
+    border-color: #4158d0;
+    box-shadow: 0 0 0 4px rgba(65, 88, 208, 0.1);
+}
+
+.submit-button {
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #4158d0, #c850c0);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(65, 88, 208, 0.3);
+}
+
+/* Result Card Styles */
+.result-card {
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.url-edit-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.url-code {
+    color: #4158d0;
+    font-weight: 500;
+}
+
+.edit-button, 
+.copy-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.edit-button {
+    background: #e3f2fd;
+    color: #4158d0;
+}
+
+.copy-button {
+    background: #f3e5f5;
+    color: #c850c0;
+}
+
+.copy-button.copied {
+    background: #4caf50;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .content-wrapper {
+        padding: 20px;
+    }
+
+    .url-form {
+        flex-direction: column;
+    }
+
+    .url-edit-group {
+        flex-wrap: wrap;
+    }
+}
